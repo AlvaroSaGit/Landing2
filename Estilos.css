@@ -22,25 +22,70 @@ body{
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
-
+/*Solo para ajustar los laterales y posicionar .cuerpo*/
 .superbody{
   padding: 20px 6% 5% 6%;
 }
-
+/*main*/
 .cuerpo{
+  position: relative;
   width: 100%;
   height: 700px;
   background-color: brown;
 }
-
+/*sidebar*/
 nav{
+  position: absolute;
+  top: 0;
+  display: inline-block;
   width: 90px;
   height: 100%;
   background-color: rgb(248, 196, 52);
 }
-
+/*nav del main content*/
 .opciones{
+  padding-left: 7.6%;
+  display: inline-block;
   background-color: rgb(210, 30, 111);
-  width: 50%;
-  height: 90px;
+  width: 100%;
+  height: 100px;
+}
+
+.texto{
+  display: inline-block;
+  background-color: red;
+  text-align: center;
+  line-height: 105px;
+  width: 150px;
+  height: 100%;
+  margin: 0px 2%;
+}
+/*Icono para el numero*/
+.telefono::before{
+  font-family: 'Material Icons';
+  content: '\e0b0';
+  color: black;
+  margin-right: 12px;
+}
+/*Zona de telefono*/
+.telefono{
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  width: 350px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: crimson;
+  font-weight: bold;
+}
+
+.main{
+  position: absolute;
+  margin-left: 6.5%;
+  margin-top: 5px;
+  margin-right: 1%;
+  width: 92.5%;
+  height: 82%;
+  background-color: blue;
 }
