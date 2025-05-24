@@ -8,14 +8,21 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root{
+  --primaryColor:rgb(45, 174, 108);
+  --secondaryColor:#004C4C;
+  --mainColor:#effff5;
+  --mainColor2:#ffff;
+}
+
 body{
-  background-color: tomato;
+  background-color: var(--primaryColor);
 }
 
 .encabezado{
   font-size: 2rem;
   font-weight: bold;
-  background-color: crimson;
+  background-color: var(--primaryColor);
   text-align: center;
   color: white;
   /*Arriba derecha abajo izquierda - si tiene 4 valores el shorthand*/
@@ -30,8 +37,8 @@ body{
 .cuerpo{
   position: relative;
   width: 100%;
-  height: 700px;
-  background-color: brown;
+  height: 710px;
+  background-color: var(--mainColor);
 }
 /*sidebar*/
 nav{
@@ -40,32 +47,37 @@ nav{
   display: inline-block;
   width: 90px;
   height: 100%;
-  background-color: rgb(248, 196, 52);
+  background-color: var(--secondaryColor);
 }
 /*nav del main content*/
 .opciones{
   padding-left: 7.6%;
   display: inline-block;
-  background-color: rgb(210, 30, 111);
+  background-color: var(--mainColor);
   width: 100%;
   height: 100px;
 }
 
 .texto{
   display: inline-block;
-  background-color: red;
+  background-color: var(--mainColor);
   text-align: center;
   line-height: 105px;
   width: 150px;
   height: 100%;
   margin: 0px 2%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
 }
 /*Icono para el numero*/
 .telefono::before{
+  position: absolute;
+  top:1px;
+  left: 36px;
   font-family: 'Material Icons';
   content: '\e0b0';
-  color: black;
-  margin-right: 12px;
+  color: var(--primaryColor);
 }
 /*Zona de telefono*/
 .telefono{
@@ -76,16 +88,27 @@ nav{
   height: 100px;
   line-height: 100px;
   text-align: center;
-  background-color: crimson;
+  background-color: var(--mainColor);
   font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--primaryColor);
 }
 /*Div donde este la imagen y formulario*/
 .main{
   position: absolute;
-  margin-left: 6.5%;
+  margin-left: 12%;
   margin-top: 5px;
   margin-right: 1%;
-  width: 92.5%;
-  height: 82%;
-  background-color: blue;
+  width: 82%;
+  height: 76%;
+  background-color: var(--mainColor2);
 }
+
+.dentista{
+  position: absolute;
+  width: 770px;
+  height: 100%;
+  background-image: linear-gradient(180deg, #004c4cab, #2f8787a2), url(dentadura.jpg);
+  background-size: cover;
+  background-position: center;
+} 
