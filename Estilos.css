@@ -13,6 +13,7 @@
   --secondaryColor:#004C4C;
   --mainColor:#effff5;
   --mainColor2:#ffff;
+  --colorLetra:#1fa874;
 }
 
 body{
@@ -32,13 +33,15 @@ body{
 /*Solo para ajustar los laterales y posicionar .cuerpo*/
 .superbody{
   padding: 20px 6% 5% 6%;
+  height: 800px;
 }
 /*main*/
 .cuerpo{
   position: relative;
   width: 100%;
-  height: 710px;
+  height: 760px;
   background-color: var(--mainColor);
+  box-shadow: 0px 50px 70px #126e4b;
 }
 /*sidebar*/
 nav{
@@ -49,6 +52,28 @@ nav{
   height: 100%;
   background-color: var(--secondaryColor);
 }
+
+.sidebarIcono::before{
+  position: absolute;
+  font-family: 'Material Icons';
+  content: '\e88a';
+  font-size: 3rem;
+  color: white;
+  top: 25px;
+  left: 20px;
+}
+
+.iconossidebar{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 4px;
+  height: 50%;
+}
+.imgSide{
+  margin-bottom: 40px;
+}
+
 /*nav del main content*/
 .opciones{
   padding-left: 7.6%;
@@ -69,6 +94,7 @@ nav{
   font-weight: bold;
   font-size: 1.2rem;
   color: var(--secondaryColor);
+  z-index: 1;
 }
 /*Icono para el numero*/
 .telefono::before{
@@ -92,6 +118,7 @@ nav{
   font-weight: bold;
   font-size: 1.4rem;
   color: var(--primaryColor);
+  z-index: 0;
 }
 /*Div donde este la imagen y formulario*/
 .main{
@@ -100,15 +127,75 @@ nav{
   margin-top: 5px;
   margin-right: 1%;
   width: 82%;
-  height: 76%;
+  height: 80%;
   background-color: var(--mainColor2);
+  box-shadow: 10px 10px 100px #c5c4c4;
 }
-
+/*Imagen*/
 .dentista{
   position: absolute;
   width: 770px;
   height: 100%;
-  background-image: linear-gradient(180deg, #004c4cab, #2f8787a2), url(dentadura.jpg);
+  background-image: linear-gradient(180deg, #004c4ccf, #004c4cd3), url(dentadura.jpg);
   background-size: cover;
   background-position: center;
+  padding: 150px 50px 20px 50px;
 } 
+/*Textos*/
+.textoMain>h1,h1>p{
+  color: white;
+  font-size: 4rem;
+}
+h1>p{
+  color: var(--colorLetra);
+}
+h1~p{
+  color: white;
+  line-height: 30px;
+}
+
+/*Botones*/
+.boton{
+  padding-right:10px;
+  position: relative;
+  font-weight: bold;
+  color: var(--colorLetra);
+  text-align: center;
+  display: inline-block;
+  height: 35px;
+  width: 150px;
+  border-radius: 20px;
+  line-height: 32px;
+  margin: 10px 30px 0px 0px;
+  background-color: none; /*#26ce8d*/
+  border: 2px solid var(--colorLetra);
+}
+.boton::after{
+  position: absolute;
+  right: 10px;
+  font-size: 1.5rem;
+  font-family: 'Material Icons';
+  content: "\e1c4";
+}
+.boton:hover{
+  background-color: var(--colorLetra);
+  color: white;
+}
+
+/*Puntos*/
+.containerBotones{
+  margin-top: 15px;
+  text-align: center;
+}
+.puntos{
+  display: inline-block;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: 0px 8px;
+  background-color: rgba(128, 128, 128, 0.488);
+  cursor: pointer;
+}
+.puntos:active{
+  background-color:white;
+}
