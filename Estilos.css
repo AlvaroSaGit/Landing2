@@ -199,3 +199,141 @@ h1~p{
 .puntos:active{
   background-color:white;
 }
+
+/*Formulario*/
+.formulario{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 600px;
+}
+label{
+  font-weight: bold;
+  color:rgba(128, 128, 128, 0.711);
+}
+
+.encabezadoForm{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--colorLetra);
+  line-height: 100px;
+  height: 80px;
+}
+.formulario .boton{
+  position: absolute;
+  right: 200px;
+  bottom: 60px;
+}
+.cajaform{
+  padding: 9px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(175, 175, 175, 0.364);
+}
+/*Parte izquierda*/
+.nombre:first-of-type{
+  position: absolute;
+  top: 90px;
+  left: 20px;
+}
+.cajaform:first-of-type{
+  position: absolute;
+  top: 130px;
+  left: 20px;
+}
+/*Parte derecha*/
+.nombre:nth-of-type(2){
+  position: absolute;
+  top: 90px;
+  right: 170px;
+}
+.cajaform:nth-of-type(2)
+{
+  position: absolute;
+  top: 130px;
+  right: 60px;
+}
+
+/*email adress*/
+
+.email{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+[type='email']{
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  width: 92%;
+}
+/*contacto*/
+.contacto{
+  position: absolute;
+  top: 320px;
+  left: 20px;
+}
+[type='contacto']{
+  position: absolute;
+  top: 370px;
+  left: 20px;
+  width: 92%;
+}
+
+/*Date time*/
+.date{
+  position: absolute;
+  top: 430px;
+  left: 20px;
+}
+.date+.cajaform{
+  position: absolute;
+  top: 460px;
+  left: 18px;
+}
+
+/*Parte derecha*/
+.time{
+  position: absolute;
+  top: 430px;
+  right: 210px;
+}
+
+.time+.cajaform{
+  position: absolute;
+  top: 460px;
+  right: 60px;
+  
+}
+/*ICONOS*/
+#date{
+  position: absolute;
+  left: 20px;
+  top: 460px;
+}
+
+
+#time{
+  position: relative;
+  top: 460px;
+  right: 60px;
+}
+
+.imgIcon{
+  height: 20px;
+  width: 20px;
+}
+.imgIcon:first-of-type{
+  position: absolute;
+  top: 470px;
+  left: 173px;
+}
+
+.imgIcon:last-of-type{
+  position: absolute;
+  top: 467px;
+  right: 72px;
+  height: 25px;
+  width: 25px;
+}
